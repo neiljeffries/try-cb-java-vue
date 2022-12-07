@@ -21,12 +21,12 @@
  */
 package trycb.config;
 
-import com.couchbase.client.java.Bucket;
-import com.couchbase.client.java.Cluster;
-
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+
+import com.couchbase.client.java.Bucket;
+import com.couchbase.client.java.Cluster;
 
 @Configuration
 public class Database {
@@ -40,8 +40,8 @@ public class Database {
     @Value("${storage.username}")
     private String username;
 
-    @Value("${storage.password}")
-    private String password;
+    // @Value("${storage.password}")
+    private String password = System.getenv("travel_sample_password");
 
     public @Bean Cluster loginCluster() {
         return Cluster.connect(host, username, password);
