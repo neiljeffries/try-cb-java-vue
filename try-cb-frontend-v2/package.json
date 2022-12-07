@@ -1,0 +1,21 @@
+{
+  "name": "try-cb-frontend-v2",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve --port 8081",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "axios": "^0.21.2",
+    "bootstrap": "^4.6.0",
+    "bootstrap-vue": "^2.21.2",
+    "vue": "^2.6.14",
+    "vue-head": "^2.2.0",
+    "vue-router": "^3.5.2"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^4.5.13",
+    "vue-template-compiler": "^2.6.14"
+  }
+}
