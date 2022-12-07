@@ -2,5 +2,5 @@
 
 ## Contains Couchbase starter projects
 
-- Java Backend Project
-- Vue Frontend project
+- try-cb-java (Java Backend)
+- try-cb-frontend-v2 (Vue Frontend)
